@@ -1,0 +1,270 @@
+export const PROJECT_FILTERS = ['All', 'SaaS', 'Web', 'Mobile', 'Business', 'E-Commerce'];
+
+export const projects = [
+  {
+    id: 'melotap',
+    title: 'MeloTap – Influencer Marketing Platform',
+    shortTitle: 'MeloTap',
+    category: 'SaaS Platform',
+    filters: ['SaaS', 'Web'],
+    status: 'Live',
+    website: 'https://melotap.com',
+    github: null,
+    year: 2025,
+    role: 'Full Stack Developer',
+    featured: true,
+    accent: '#3B82F6',
+    cardDescription:
+      'End-to-end influencer marketing platform connecting brands with creators — from campaign creation and escrow payments to content approval and analytics.',
+    description:
+      'A complete influencer marketing platform connecting brands with creators. Brands can create campaigns, manage budgets through an integrated wallet system, invite influencers, review submitted content, approve collaborations, and release payments after verification. Creators can connect Instagram and Facebook accounts, apply for campaigns, submit content, track earnings, and manage collaborations from a dedicated dashboard.',
+    highlights: [
+      'Brand Dashboard',
+      'Creator Dashboard',
+      'Instagram OAuth',
+      'Facebook OAuth',
+      'Campaign Management',
+      'Wallet System',
+      'Escrow-style Payments',
+      'Creator Approval Workflow',
+      'Analytics Dashboard',
+      'Notifications',
+      'Secure Authentication',
+      'Responsive Dashboard',
+    ],
+    problem:
+      'Brands and creators lacked a unified platform to manage influencer campaigns, verify social accounts, handle payments securely, and track collaboration outcomes in one place.',
+    solution:
+      'Built a dual-sided SaaS platform with separate brand and creator dashboards, Meta OAuth integrations, an escrow-style wallet for secure payouts, and a full campaign lifecycle from invitation to content approval.',
+    architecture:
+      'Next.js frontend with server-side rendering, Fastify REST APIs, MySQL database via Sequelize ORM, Meta Graph API for social integrations, AWS hosting with Nginx reverse proxy, and role-based access across brand and creator portals.',
+    challenges: [
+      'Integrating Instagram and Facebook OAuth with Meta Graph API token refresh and permission scopes',
+      'Designing an escrow-style wallet system with payment release tied to content verification',
+      'Building real-time notifications across campaign status changes and collaboration updates',
+      'Scaling dual dashboards with distinct workflows for brands and creators',
+    ],
+    tech: [
+      'Next.js',
+      'React',
+      'Node.js',
+      'Fastify',
+      'MySQL',
+      'Sequelize',
+      'Meta Graph API',
+      'AWS',
+      'Nginx',
+      'Tailwind CSS',
+    ],
+  },
+  {
+    id: 'billclap',
+    title: 'BillClap – Billing & Accounting Software',
+    shortTitle: 'BillClap',
+    category: 'Business Software',
+    filters: ['Business', 'Web'],
+    status: 'Production',
+    website: null,
+    github: null,
+    year: 2024,
+    role: 'Full Stack Developer',
+    featured: true,
+    accent: '#8B5CF6',
+    cardDescription:
+      'Comprehensive billing and accounting platform for GST invoicing, inventory, warehouses, expenses, banking, and multi-business financial operations.',
+    description:
+      'A modern billing and accounting platform built for businesses to manage invoicing, GST billing, inventory, warehouses, expenses, banking, customers, suppliers, reports, barcode management, and financial operations from a single dashboard.',
+    highlights: [
+      'GST Billing',
+      'Inventory Management',
+      'Warehouse Management',
+      'Barcode Support',
+      'Invoice Templates',
+      'Payment Tracking',
+      'Expense Management',
+      'Customer & Supplier Management',
+      'Reports',
+      'Bank Accounts',
+      'Journal Entries',
+      'Discount Coupons',
+      'Custom Fields',
+      'Role-based Permissions',
+      'Multi Business Support',
+    ],
+    problem:
+      'Small and mid-sized businesses needed an all-in-one solution to handle GST-compliant billing, inventory tracking, and financial reporting without juggling multiple disconnected tools.',
+    solution:
+      'Developed a unified business management platform with GST invoicing, warehouse and barcode support, role-based permissions, and multi-business capabilities — all accessible from a single admin dashboard.',
+    architecture:
+      'React SPA with Ant Design component library, Redux for state management, Express.js REST APIs, MySQL with Sequelize ORM, and modular service layers for billing, inventory, and reporting modules.',
+    challenges: [
+      'Implementing GST-compliant invoice generation with customizable templates',
+      'Managing complex inventory flows across multiple warehouses and barcode systems',
+      'Building role-based permissions for multi-user, multi-business environments',
+      'Optimizing report generation for large transactional datasets',
+    ],
+    tech: ['React', 'Node.js', 'Express', 'MySQL', 'Sequelize', 'Ant Design', 'Redux', 'REST APIs'],
+  },
+  {
+    id: 'digital-dukaan',
+    title: 'Digital Dukaan',
+    shortTitle: 'Digital Dukaan',
+    category: 'E-Commerce',
+    filters: ['E-Commerce', 'Web'],
+    status: 'Production',
+    website: null,
+    github: null,
+    year: 2024,
+    role: 'Full Stack Developer',
+    featured: true,
+    accent: '#06B6D4',
+    cardDescription:
+      'Digital storefront platform enabling businesses to launch online stores with product management, order tracking, payments, and a responsive admin dashboard.',
+    description:
+      'An online commerce platform enabling businesses to create their own digital storefront, manage products, inventory, customers, online orders, and payment workflows with a responsive admin dashboard.',
+    highlights: [
+      'Product Management',
+      'Inventory',
+      'Order Tracking',
+      'Customer Management',
+      'Payment Integration',
+      'Analytics',
+      'Admin Dashboard',
+      'Responsive UI',
+    ],
+    problem:
+      'Local businesses needed a simple way to move online without complex e-commerce setup, enabling them to manage products, orders, and payments independently.',
+    solution:
+      'Created a turnkey digital storefront platform with product and inventory management, integrated payment workflows, order tracking, and an intuitive admin dashboard for business owners.',
+    architecture:
+      'Next.js for server-rendered storefront pages, React admin dashboard, Node.js REST APIs, MySQL with Sequelize, and Tailwind CSS for responsive UI across devices.',
+    challenges: [
+      'Designing a flexible product catalog with inventory sync across storefront and admin',
+      'Integrating payment workflows with order status tracking',
+      'Building a responsive admin dashboard usable on mobile devices',
+      'Optimizing page load performance for product listing pages',
+    ],
+    tech: ['Next.js', 'React', 'Node.js', 'MySQL', 'Sequelize', 'REST API', 'Tailwind CSS'],
+  },
+  {
+    id: 'home-check',
+    title: 'Home Check',
+    shortTitle: 'Home Check',
+    category: 'Mobile Application',
+    filters: ['Mobile'],
+    status: 'Production',
+    website: null,
+    github: null,
+    year: 2024,
+    role: 'Full Stack Developer',
+    featured: false,
+    accent: '#10B981',
+    cardDescription:
+      'React Native app for property inspection — capture photos, complete reports offline, sync data, and generate detailed inspection documents from the field.',
+    description:
+      'A React Native mobile application developed for property inspection and home verification. Inspectors can capture photos, complete inspection reports, synchronize data with the server, and generate detailed reports directly from mobile devices.',
+    highlights: [
+      'Offline Support',
+      'Image Upload',
+      'Inspection Reports',
+      'Task Assignment',
+      'Real-time Sync',
+      'Authentication',
+      'Notifications',
+    ],
+    problem:
+      'Field inspectors needed a reliable mobile tool to conduct property inspections offline, capture evidence, and sync reports without losing data in low-connectivity areas.',
+    solution:
+      'Built a React Native app with offline-first architecture, image capture and upload, structured inspection report forms, and background sync when connectivity is restored.',
+    architecture:
+      'React Native mobile app with Redux state management, Node.js REST APIs, MySQL backend, Firebase for push notifications and file storage, and offline queue for data synchronization.',
+    challenges: [
+      'Implementing reliable offline data persistence with conflict resolution on sync',
+      'Handling large image uploads with compression and retry logic',
+      'Building dynamic inspection report forms with conditional fields',
+      'Managing task assignment workflows between admins and field inspectors',
+    ],
+    tech: ['React Native', 'Node.js', 'MySQL', 'Firebase', 'Redux', 'REST APIs'],
+  },
+  {
+    id: 'vizbe',
+    title: 'Vizbe',
+    shortTitle: 'Vizbe',
+    category: 'Business Platform',
+    filters: ['Business', 'Web'],
+    status: 'Production',
+    website: null,
+    github: null,
+    year: 2024,
+    role: 'Full Stack Developer',
+    featured: false,
+    accent: '#F59E0B',
+    cardDescription:
+      'Scalable business platform with secure authentication, dashboard analytics, user management, API integrations, and performance-optimized responsive interfaces.',
+    description:
+      'A scalable business platform featuring secure authentication, dashboard analytics, user management, API integrations, and responsive interfaces optimized for performance and usability.',
+    highlights: [
+      'Dashboard',
+      'Authentication',
+      'Analytics',
+      'User Management',
+      'Responsive UI',
+      'Role Management',
+      'REST APIs',
+    ],
+    problem:
+      'Businesses required a centralized platform to manage users, view analytics, and integrate with external services through a secure and performant interface.',
+    solution:
+      'Delivered a full-stack business platform with role-based user management, interactive analytics dashboards, secure JWT authentication, and RESTful API integrations.',
+    architecture:
+      'Next.js frontend with Tailwind CSS, Node.js REST APIs, MySQL database, JWT-based authentication, and modular API integration layer for third-party services.',
+    challenges: [
+      'Building performant analytics dashboards with real-time data aggregation',
+      'Implementing granular role management with permission-based UI rendering',
+      'Designing a scalable API integration layer for external services',
+      'Optimizing server-side rendering for fast initial page loads',
+    ],
+    tech: ['Next.js', 'React', 'Node.js', 'MySQL', 'Tailwind CSS', 'REST APIs'],
+  },
+  {
+    id: 'influencer-app',
+    title: 'Influencer Mobile App',
+    shortTitle: 'Influencer App',
+    category: 'Mobile Application',
+    filters: ['Mobile', 'SaaS'],
+    status: 'Production',
+    website: null,
+    github: null,
+    year: 2025,
+    role: 'Full Stack Developer',
+    featured: false,
+    accent: '#EC4899',
+    cardDescription:
+      'Mobile app for creators to discover campaigns, connect social accounts, submit content, track earnings, and communicate with brands in real time.',
+    description:
+      'A mobile application for influencers to discover campaigns, connect social media accounts, submit campaign content, monitor earnings, receive notifications, and communicate with brands in real time.',
+    highlights: [
+      'Campaign Discovery',
+      'Instagram Integration',
+      'Facebook Integration',
+      'Wallet',
+      'Notifications',
+      'Profile Management',
+      'Realtime Updates',
+      'Secure Login',
+    ],
+    problem:
+      'Influencers needed a mobile-first way to discover brand campaigns, manage social account connections, submit content, and track earnings on the go.',
+    solution:
+      'Developed a React Native app with campaign discovery feeds, social media OAuth, in-app wallet for earnings, push notifications, and real-time collaboration updates with brands.',
+    architecture:
+      'React Native with Redux Toolkit, Fastify backend APIs, MySQL via Sequelize, Firebase for notifications and real-time updates, and secure token-based authentication.',
+    challenges: [
+      'Integrating social media OAuth flows within mobile WebView and deep linking',
+      'Building real-time campaign updates with efficient push notification delivery',
+      'Implementing a mobile wallet UI synced with backend escrow payment states',
+      'Optimizing app performance for media-heavy campaign content feeds',
+    ],
+    tech: ['React Native', 'Fastify', 'Node.js', 'MySQL', 'Firebase', 'Redux Toolkit'],
+  },
+];
